@@ -10,7 +10,7 @@ import Foundation
 
 class MovieController {
     
-    let baseUrl = NSURL(string: "http://api.themoviedb.org/3/search/movie")
+    let baseUrl = NSURL(string: "http://api.themoviedb.org/3/search/movie?api_key=f83783c7c1e09d03fe09770bc9c4bf57&query="")
     
     var movies: [Movie] = []
     
