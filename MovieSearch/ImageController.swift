@@ -8,7 +8,7 @@
 
 import UIKit
 
-class imageController {
+class ImageController {
     
     static func imageForURL(url: String, completion: ((image: UIImage?) -> Void)) {
         

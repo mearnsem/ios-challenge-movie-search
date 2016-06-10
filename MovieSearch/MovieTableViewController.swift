@@ -26,6 +26,8 @@ class MovieTableViewController: UITableViewController, UISearchBarDelegate {
                 self.tableView.reloadData()
             })
         }
+        
+        searchBar.resignFirstResponder()
     }
 
     // MARK: - Table view data source
@@ -39,6 +41,8 @@ class MovieTableViewController: UITableViewController, UISearchBarDelegate {
 
         let movie = movies[indexPath.row]
         cell?.updateWithMovie(movie)
+        
+        
 
         return cell ?? MovieTableViewCell()
     }

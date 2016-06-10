@@ -20,9 +20,24 @@ class MovieTableViewCell: UITableViewCell {
         ratingLabel.text = "Rating: \(movie.rating)"
         summaryLabel.text = movie.summary
         
-        imageController.imageForURL(movie.posterImage) { (image) in
+        ImageController.imageForURL(movie.posterImage) { (image) in
             self.posterImageView.image = image
+            
         }
+        
     }
+    
+//    func getFrameSizeForImage(image: UIImage, inImageView: UIImageView) -> CGRect {
+//        guard let width = imageView?.frame.size.width, height = imageView?.frame.size.height else {return CGRect()}
+//        
+//        let widthRatio = image.size.width / width
+//        let heightRatio = image.size.height / height
+//        let scale = max(widthRatio, heightRatio)
+//        let newImageWidth = image.size.width / scale
+//        let newImageHeight = image.size.height / scale
+//        let leftOffSet = (width - newImageWidth) / 2
+//        let topOffSet = (height - newImageHeight) / 2
+//        return CGRectMake(leftOffSet, topOffSet, newImageWidth, newImageHeight)
+//    }
 
 }

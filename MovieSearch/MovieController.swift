@@ -35,7 +35,9 @@ class MovieController {
                     movies.append(movie)
                 }
             }
-            completion(movies: movies)
+            let sortedMovies = movies.sort({$0.0.rating > $0.1.rating})
+            
+            completion(movies: sortedMovies)
             return
         }
     }

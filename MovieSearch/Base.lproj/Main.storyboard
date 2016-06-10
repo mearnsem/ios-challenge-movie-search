@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Fo8-Ef-bPU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gpl-go-bPB">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Movie Table View Controller-->
+        <!--Movie Search-->
         <scene sceneID="wtJ-Dj-f4h">
             <objects>
                 <tableViewController id="cVG-Tf-WIG" customClass="MovieTableViewController" customModule="MovieSearch" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +47,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="bAR-Hf-MeR"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -56,7 +56,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="75" id="oz3-Q7-Wca"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -91,29 +91,29 @@
                             <outlet property="delegate" destination="cVG-Tf-WIG" id="ZEz-0w-4eA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="oXK-YC-hhn"/>
+                    <navigationItem key="navigationItem" title="Movie Search" id="oXK-YC-hhn"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7i1-FF-e2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1145" y="410"/>
+            <point key="canvasLocation" x="1957" y="410"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="7cZ-WP-Whj">
+        <scene sceneID="nxP-Ek-bxG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fo8-Ef-bPU" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gpl-go-bPB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FGN-I8-7dZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kcu-P5-zyn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="cVG-Tf-WIG" kind="relationship" relationship="rootViewController" id="Pg2-ZN-uXf"/>
+                        <segue destination="cVG-Tf-WIG" kind="relationship" relationship="rootViewController" id="KBG-pX-0eP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L7S-mR-k9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WzP-l4-VLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="465" y="410"/>
+            <point key="canvasLocation" x="1306" y="410"/>
         </scene>
     </scenes>
 </document>
