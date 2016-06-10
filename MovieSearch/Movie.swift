@@ -17,6 +17,7 @@ class Movie {
     
     init?(dictionary: [String: AnyObject]) {
         guard let title = dictionary["title"] as? String, rating = dictionary["vote_average"] as? Int, summary = dictionary["overview"] as? String, posterImage = dictionary["poster_path"] as? String else {return nil}
+        
         self.title = title
         self.rating = rating
         self.summary = summary
