@@ -16,7 +16,9 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var posterImageView: UIImageView!
     
     func updateWithMovie(movie: Movie) {
-        
+        titleLabel.text = movie.title
+        ratingLabel.text = "Rating: \(movie.rating)"
+        summaryLabel.text = movie.summary
     }
 
 }
