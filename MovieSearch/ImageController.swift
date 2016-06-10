@@ -12,8 +12,11 @@ class imageController {
     
     static func imageForURL(url: String, completion: ((image: UIImage?) -> Void)) {
         
+        let imageSearchUrl = "http://image.tmdb.org/t/p/w500"
         
-        guard let url = NSURL(string: url) else {fatalError("Image URL optional is nil")}
+        guard let url = NSURL(string: imageSearchUrl + url) else {
+            fatalError("Image URL optional is nil")
+        }
         
         NetworkController.performRequestForURL(url, httpMethod: .Get) { (data, error) in
             guard let data = data else {

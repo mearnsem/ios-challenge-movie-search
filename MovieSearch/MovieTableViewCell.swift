@@ -19,6 +19,10 @@ class MovieTableViewCell: UITableViewCell {
         titleLabel.text = movie.title
         ratingLabel.text = "Rating: \(movie.rating)"
         summaryLabel.text = movie.summary
+        
+        imageController.imageForURL(movie.posterImage) { (image) in
+            self.posterImageView.image = image
+        }
     }
 
 }

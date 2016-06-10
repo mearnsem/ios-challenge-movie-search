@@ -31,7 +31,6 @@ class MovieTableViewController: UITableViewController, UISearchBarDelegate {
     // MARK: - Table view data source
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(movies.count)
         return movies.count
     }
     
